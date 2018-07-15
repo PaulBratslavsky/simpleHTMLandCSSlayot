@@ -1,6 +1,6 @@
 body {
     margin: 0 0;
-    background: #2F3E4E;
+    background: #161838;
     color: #EBEBEB;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.4rem;
@@ -18,36 +18,40 @@ h1, h2, h3, h4, h5, h6, p {
 
 .container-header {
     max-width: 960px;
-    min-width: 60px;
+    min-width: 320px;
     margin: 0px auto;
 }
 .container-main {
     max-width: 960px;
-    min-width: 60px;
+    min-width: 320px;
     margin: 0px auto;
     
 }
 
 header {
     height: 75px;
-    background-color: #505D6B;
+    background-color: #110D24;
 }
 
 header h1 {
     line-height: 75px;
+    text-align: center;
 }
 
 .hero-section {
     background: #EBEBEB;
     margin: 15px 0px;
     height: 400px;
+    min-width: 320px;
+    background-image: url(img/cityscape.gif);
+    background-size: cover;
 }
 
 .three-col-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    background: #EBEBEB;
+    background: #120e25;
     padding: 10px 10px 5px 10px;
     border-bottom-right-radius: 15px;
 
@@ -58,7 +62,6 @@ header h1 {
     flex-basis: 32%;
     margin-bottom: 10px;
     border-bottom-right-radius: 15px;
-    background: #EBEBEB;
 
 }
 
@@ -72,18 +75,17 @@ header h1 {
     height: 60px;
     line-height: 55px;
     color: white;
-    background:  rgb(221, 78, 53);
 }
 
 .section-content p{
-    color: #323E4C;
+    color: #EBEBEB;
     padding-bottom: 10px;
 }
 
 
 
 .single-equal-col button {
-    background: rgb(221, 78, 53);
+    background: #1A294B;
     padding: 20px 5px;
     border: none;
     width: 100%;
@@ -94,43 +96,65 @@ header h1 {
 }
 
 #main-col-three .section-header {
-    background: #73BEDB;
+    background: #47A2EB;
 }
 
 #main-col-one .section-header {
-    background: #74B566;
+    background: #498C6E;
 }
 
 #main-col-two .section-header {
-    background: #E7AF5F;
+    background: #692D31;
 }
 
 .main-content-and-sidebar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 15px;
     padding: 15px 0;
-    background: #EBEBEB;
+    background: #161838;
 
 }
 
 .main-content {
     flex-basis: 66%;
-    background: white;
+    background: #7090b5;
     height: 500px;
 }
 
 .main-sidebar {
     flex-basis: 32%;
-    background: rgb(221, 78, 53);
+    background: #1A294B;
     color: white;
     height: 500px;
 }
 
 footer {
     height: 75px;
-    background-color: rgb(13, 15, 19);
+    background-color: #100C1C;
     text-align: center;
     line-height: 75px;
+}
+
+@media ( min-width: 900px ) {
+
+    header h1 {
+        line-height: 75px;
+        padding-left: .8rem;
+        text-align: left;
+    }
+    .three-col-section {
+        flex-direction: row;
+        background: #EBEBEB;
+    
+    }
+
+    .main-content-and-sidebar {
+        flex-direction: row;
+    }
+
+    .single-equal-col {
+        background: #EBEBEB; 
+    }
 }
