@@ -150,11 +150,15 @@ footer {
     
     }
 
+    .section-content p {
+        color: #1C2A48; 
+    }
+
     .main-content-and-sidebar {
         flex-direction: row;
     }
 
     .single-equal-col {
-        background: #EBEBEB; 
+        background: #EBEBEB;
     }
 }
