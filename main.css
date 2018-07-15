@@ -4,6 +4,7 @@ body {
     color: #EBEBEB;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.4rem;
+    
 
 }
 
@@ -16,20 +17,42 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 0;
 }
 
-.container-header {
-    max-width: 960px;
-    min-width: 320px;
-    margin: 0px auto;
-}
+
 .container-main {
-    max-width: 960px;
+    max-width: 1200px;
     min-width: 320px;
     margin: 0px auto;
     
 }
 
+.container-main-hero {
+    margin: 0 auto;
+    display: flex;
+}
+
+.center-me {
+    font-size: 50px;
+    margin: auto;
+}
+
+.center-me button {
+    background: #bb2880;
+    padding: 20px 40px;
+    margin-top: 1.2rem;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 1.4rem;
+    border-bottom-right-radius: 15px;
+
+}
+
+.center-me button:hover {
+    background:  #4DA2DE;
+}
+
 header {
-    height: 75px;
+    min-height: 75px;
     background-color: #110D24;
 }
 
@@ -41,10 +64,58 @@ header h1 {
 .hero-section {
     background: #EBEBEB;
     margin: 15px 0px;
-    height: 400px;
+    height: 700px;
     min-width: 320px;
     background-image: url(img/cityscape.gif);
     background-size: cover;
+    text-align: center;
+    display: flex;
+}
+
+.container-header {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-header h1 {
+    flex: 1;
+    font-size: 2.2rem;
+}
+
+.container-header nav {
+    /* float: left */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    margin: 0px auto;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #EBEBEB;
+}
+
+nav ul li:hover {
+    color:#EBEBEB;
+    background: #AD387D;
+}
+nav ul li {
+    padding: 10px 10px;
+    background: #4DA2DE;
+    margin: 2px auto;
+    list-style: none;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    
 }
 
 .three-col-section {
@@ -95,6 +166,10 @@ header h1 {
 
 }
 
+.single-equal-col button:hover {
+    background: #AD387D;
+}
+
 #main-col-three .section-header {
     background: #47A2EB;
 }
@@ -138,12 +213,52 @@ footer {
 }
 
 @media ( min-width: 900px ) {
-
+    header {
+        height: 75px;
+        background-color: #110D24;
+    }
     header h1 {
-        line-height: 75px;
+        line-height: 70px;
         padding-left: .8rem;
         text-align: left;
     }
+
+    .container-header {
+    min-width: 320px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+
+    }
+
+.container-header h1 {
+    flex: 1;
+}
+
+.container-header nav {
+    float: left
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+
+nav ul li {
+    padding: 5px 10px;
+    list-style: none;
+    background: #0F0E23;
+    margin-top: 12px;
+    
+}
+
+    nav ul li:hover {
+        background: #0F0E23;
+        color: #4DA2DE;
+    }
+
+    
     .three-col-section {
         flex-direction: row;
         background: #EBEBEB;
