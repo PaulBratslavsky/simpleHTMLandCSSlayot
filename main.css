@@ -146,11 +146,13 @@ nav ul li {
     height: 60px;
     line-height: 55px;
     color: white;
+    text-align: center;
 }
 
 .section-content p{
     color: #EBEBEB;
-    padding-bottom: 10px;
+    padding: 5px 10px 10px 10px;
+    text-align: center;
 }
 
 
@@ -212,7 +214,7 @@ footer {
     line-height: 75px;
 }
 
-@media ( min-width: 900px ) {
+@media ( min-width: 860px ) {
     header {
         height: 75px;
         background-color: #110D24;
@@ -250,6 +252,7 @@ nav ul li {
     list-style: none;
     background: #0F0E23;
     margin-top: 12px;
+    text-align: left;
     
 }
 
@@ -261,7 +264,7 @@ nav ul li {
     
     .three-col-section {
         flex-direction: row;
-        background: #EBEBEB;
+        background: #161936;
     
     }
 
@@ -275,5 +278,8 @@ nav ul li {
 
     .single-equal-col {
         background: #EBEBEB;
+        padding: 10px 10px;
     }
+
+    
 }
