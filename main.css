@@ -1,0 +1,136 @@
+body {
+    margin: 0 0;
+    background: #2F3E4E;
+    color: #EBEBEB;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+
+}
+
+.text-pading-left {
+    padding-left: 0.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.container-header {
+    max-width: 960px;
+    min-width: 60px;
+    margin: 0px auto;
+}
+.container-main {
+    max-width: 960px;
+    min-width: 60px;
+    margin: 0px auto;
+    
+}
+
+header {
+    height: 75px;
+    background-color: #505D6B;
+}
+
+header h1 {
+    line-height: 75px;
+}
+
+.hero-section {
+    background: #EBEBEB;
+    margin: 15px 0px;
+    height: 400px;
+}
+
+.three-col-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #EBEBEB;
+    padding: 10px 10px 5px 10px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.single-equal-col {
+    box-sizing: border-box;
+    flex-basis: 32%;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 15px;
+    background: #EBEBEB;
+
+}
+
+.single-equal-col img {
+    width: 100%;
+    height: auto;
+}
+
+
+.section-header {
+    height: 60px;
+    line-height: 55px;
+    color: white;
+    background:  rgb(221, 78, 53);
+}
+
+.section-content p{
+    color: #323E4C;
+    padding-bottom: 10px;
+}
+
+
+
+.single-equal-col button {
+    background: rgb(221, 78, 53);
+    padding: 20px 5px;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 1.4rem;
+    border-bottom-right-radius: 15px;
+
+}
+
+#main-col-three .section-header {
+    background: #73BEDB;
+}
+
+#main-col-one .section-header {
+    background: #74B566;
+}
+
+#main-col-two .section-header {
+    background: #E7AF5F;
+}
+
+.main-content-and-sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 15px 0;
+    background: #EBEBEB;
+
+}
+
+.main-content {
+    flex-basis: 66%;
+    background: white;
+    height: 500px;
+}
+
+.main-sidebar {
+    flex-basis: 32%;
+    background: rgb(221, 78, 53);
+    color: white;
+    height: 500px;
+}
+
+footer {
+    height: 75px;
+    background-color: rgb(13, 15, 19);
+    text-align: center;
+    line-height: 75px;
+}
