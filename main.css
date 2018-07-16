@@ -1,3 +1,9 @@
+/***************************
+        Global Style
+****************************/
+
+
+
 body {
     margin: 0 0;
     background: #161838;
@@ -17,7 +23,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 0;
 }
 
-
 .container-main {
     max-width: 1024px;
     min-width: 320px;
@@ -25,30 +30,20 @@ h1, h2, h3, h4, h5, h6, p {
     
 }
 
-.container-main-hero {
-    margin: 0 auto;
-    display: flex;
+.main-section {
+    margin: 15px 0px;
+    height: 580px;
+    min-width: 320px;
+    
 }
 
-.center-me {
-    font-size: 50px;
-    margin: auto;
+.card-length {
+    height: 580px;
 }
 
-.center-me button {
-    background: #bb2880;
-    padding: 20px 40px;
-    margin-top: 1.2rem;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    border-bottom-right-radius: 15px;
-
-}
-
-.center-me button:hover {
-    background:  #4DA2DE;
-}
+/***************************
+        Header Global
+****************************/
 
 header {
     min-height: 75px;
@@ -58,17 +53,6 @@ header {
 header h1 {
     line-height: 75px;
     text-align: center;
-}
-
-.hero-section {
-    background: #EBEBEB;
-    margin: 15px 0px;
-    height: 700px;
-    min-width: 320px;
-    background-image: url(img/cityscape.gif);
-    background-size: cover;
-    text-align: center;
-    display: flex;
 }
 
 .container-header {
@@ -84,9 +68,9 @@ header h1 {
     font-size: 2.2rem;
 }
 
-.container-header nav {
-    /* float: left */
-}
+/***************************
+        Nav Global
+****************************/
 
 nav ul {
     display: flex;
@@ -116,6 +100,48 @@ nav ul li {
     text-align: center;
     
 }
+
+
+/***************************
+        Home Page
+****************************/
+
+
+
+
+.homepage-hero-section {
+    background-image: url(img/cityscape.gif);
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+}
+
+.center-me {
+    font-size: 50px;
+    margin: auto;
+}
+
+.center-me button {
+    background: #bb2880;
+    padding: 20px 40px;
+    margin-top: 1.2rem;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-bottom-right-radius: 15px;
+
+}
+
+.center-me button:hover {
+    background:  #4DA2DE;
+}
+
+/***************************
+        Services Page
+****************************/
 
 .three-col-section {
     display: flex;
@@ -182,6 +208,70 @@ nav ul li {
 #main-col-two .section-header {
     background: #692D31;
 }
+
+
+/***************************
+        About Page
+****************************/
+
+.two-col-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #120e25;
+    border-bottom-right-radius: 15px;
+
+}
+.single-col-one {
+    box-sizing: border-box;
+    flex-basis: 66%;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 15px;
+
+}
+
+
+.single-col-two {
+    box-sizing: border-box;
+    flex-basis: 32%;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.single-equal-col img {
+    width: 100%;
+    height: auto;
+}
+
+
+.section-header {
+    height: 60px;
+    line-height: 55px;
+    color: white;
+    text-align: center;
+}
+
+.section-content p{
+    color: #EBEBEB;
+    padding: 5px 10px 10px 10px;
+    text-align: center;
+}
+
+
+
+.single-equal-col button {
+    background: #1A294B;
+    padding: 20px 5px;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 1.4rem;
+    border-bottom-right-radius: 15px;
+
+}
+
+/****/
 
 .main-content-and-sidebar {
     display: flex;
@@ -267,6 +357,17 @@ nav ul li {
     
     }
 
+    .two-col-section {
+        flex-direction: row;
+        background: #161936;
+        display: flex;
+        justify-content: space-between;
+}
+.feature {
+    margin: 0 auto;
+    
+    }
+
     .section-content p {
         color: #1C2A48; 
     }
@@ -276,6 +377,12 @@ nav ul li {
     }
 
     .single-equal-col {
+        background: #EBEBEB;
+        padding: 10px 10px;
+    }
+
+    .single-col-one, 
+    .single-col-two {
         background: #EBEBEB;
         padding: 10px 10px;
     }
